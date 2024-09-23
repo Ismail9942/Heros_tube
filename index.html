@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-slate-800">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Tube</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="container mx-auto m-10">
+      <nav class="flex justify-between items-center">
+        <img class="bg-white p-4 rounded-lg" src="images/Logo.png" alt="" />
+        <button id="sort-btn" class="btn bg-slate-100">Sort By View</button>
+        <button class="btn bg-red-600 text-white">Blog</button>
+      </nav>
+      <hr class="w-full h-1 mx-auto bg-white mt-4" />
+    </header>
+    <main class="container mx-auto m-10">
+      <!-- daynamic div -->
+      <section class="">
+        <div id="btn-container" class="mt-12 space-x-4 ml-24 text-center">
+          <!-- <button class="btn btn-ghost bg-slate-700 text-white">All</button> -->
+        </div>
+      </section>
+      <section>
+        <div id="error-element" class="hidden mt-24">
+          <img class="mx-auto" src="images/Icon.png" alt="" />
+          <h1 class="text-3xl mt-3 text-slate-600 text-center">
+            Opps !! Threr are No data for this Category
+          </h1>
+        </div>
+        <div
+          id="card-container"
+          class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12"
+        ></div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
